@@ -56,11 +56,11 @@ def coffeeFlavour(beverage):
         print("ERROR: Invalid input!")
         exit()
 
-while True:
+def main():
     name = input("What is your name?\n")
     if ' ' in name:
         print("ERROR: Invalid input!")
-        break
+        exit()
     cost = 0
     temp = 0
     flavour = ''
@@ -80,7 +80,5 @@ while True:
     cost = round(cost, 2)
 
     print("For", name + ", a", size, beverage + ",", flavour, "cost: $" + str(cost))
-    break
 
- 
-
+main()
