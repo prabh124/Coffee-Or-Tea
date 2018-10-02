@@ -49,7 +49,7 @@ def coffeeFlavour(beverage):
     if (flavour == '') or (flavour == 'none'):
         return 'no flavouring', 0.0
     elif (flavour == 'c') or (flavour == 'chocolate'):
-        return 'vhocolate', 0.75
+        return 'chocolate', 0.75
     elif (flavour == 'v') or (flavour == 'vanilla'):
         return 'vanilla', 0.25
     else:
@@ -61,6 +61,7 @@ def main():
     if ' ' in name:
         print("ERROR: Invalid input!")
         exit()
+
     cost = 0
     temp = 0
     flavour = ''
@@ -82,3 +83,5 @@ def main():
     print("For", name + ", a", size, beverage + ",", flavour, "cost: $" + str(cost))
 
 main()
+ 
+
