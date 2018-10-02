@@ -11,7 +11,6 @@ def displayMenu(name):
         print("ERROR: Invalid input!")
         exit()
     
-
 def sizeOfBeverage(beverage):
     print("What sized", beverage, "would you like?")
     size = input()
@@ -57,8 +56,6 @@ def coffeeFlavour(beverage):
         print("ERROR: Invalid input!")
         exit()
 
-
-
 while True:
     name = input("What is your name?\n")
     if ' ' in name:
@@ -67,6 +64,7 @@ while True:
     cost = 0
     temp = 0
     flavour = ''
+
     beverage = displayMenu(name)
 
     size, temp = sizeOfBeverage(beverage)
